@@ -69,7 +69,8 @@ vim.cmd([[vnoremap <leader>di{   "+di{]])
 vim.cmd([[highlight QuickScopePrimary guifg='#afff5f' gui=underline ctermfg=155 cterm=underline]])
 vim.cmd([[highlight QuickScopeSecondary guifg='#5fffff' gui=underline ctermfg=81 cterm=underline]])
 vim.cmd([[highlight OperatorSandwichBuns guifg='#aa91a0' gui=underline ctermfg=172 cterm=underline]])
-vim.cmd([[highlight OperatorSandwichChange guifg='#edc41f' gui=underline ctermfg='yellow' cterm=underline]])
+vim.cmd(
+    [[highlight OperatorSandwichChange guifg='#edc41f' gui=underline ctermfg='yellow' cterm=underline]])
 vim.cmd([[highlight OperatorSandwichAdd guibg='#b1fa87' gui=none ctermbg='green' cterm=none]])
 vim.cmd([[highlight OperatorSandwichDelete guibg='#cf5963' gui=none ctermbg='red' cterm=none]])
 
@@ -90,6 +91,11 @@ map("n", "s=", "<C-w>=", opt)
 
 map("v", "L", "$", opt)
 map("v", "H", "^", opt)
+
+map("n", "sf", "<C-f>", opt)
+map("n", "sb", "<C-b>", opt)
+map("n", "su", "<C-u>", opt)
+map("n", "sd", "<C-d>", opt)
 
 if vim.g.vscode then
 
