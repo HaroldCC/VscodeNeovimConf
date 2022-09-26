@@ -4,7 +4,7 @@ let mapleader = "\<space>"
 nnoremap vv <C-v>
 inoremap jk <ESC>
 
-nnoremap ;n :noh<CR>
+"nnoremap ;n :noh<CR>
 
 "删除设置
 nnoremap dd    "_dd
