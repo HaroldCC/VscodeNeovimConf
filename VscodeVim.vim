@@ -1,10 +1,12 @@
 " 始终都会加载的配置项
 let mapleader = "\<space>"
 
+set ignorecase
+set smartcase
+set hlsearch
+
 nnoremap vv <C-v>
 inoremap jk <ESC>
-
-"nnoremap ;n :noh<CR>
 
 "删除设置
 nnoremap dd    "_dd
@@ -41,8 +43,7 @@ vnoremap <leader>di"   "+di"
 vnoremap <leader>di(   "+di(
 vnoremap <leader>di{   "+di{
 
-vnoremap . :normal! .<CR>
-inoremap jk <ESC>
+noremap . :normal! .<CR>
 nnoremap <leader>s :%s/\<<C-R><C-W>\>//g<left><left>
 vnoremap <leader>s :%s/\<<C-R><C-W>\>//g<left><left>
 
