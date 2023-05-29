@@ -4,7 +4,6 @@ let mapleader = "\<space>"
 set ignorecase
 set smartcase
 set hlsearch
-
 nnoremap vv <C-v>
 inoremap jk <ESC>
 
@@ -16,14 +15,16 @@ nnoremap D     "_D
 nnoremap di"   "_di"
 nnoremap di(   "_di(
 nnoremap di{   "_di{
+nnoremap x     "_x
 
-nnoremap <leader>dd    "+dd
-nnoremap <leader>daw   "+daw
-nnoremap <leader>dw    "+dw
-nnoremap <leader>D     "+D
-nnoremap <leader>di"   "+di"
-nnoremap <leader>di(   "+di(
-nnoremap <leader>di{   "+di{
+nnoremap <leader>dd    ""dd
+nnoremap <leader>daw   ""daw
+nnoremap <leader>dw    ""dw
+nnoremap <leader>D     ""D
+nnoremap <leader>di"   ""di"
+nnoremap <leader>di(   ""di(
+nnoremap <leader>di{   ""di{
+nnoremap <leader>x     ""x
 
 vnoremap d     "_d
 vnoremap dd    "_dd
@@ -55,6 +56,7 @@ nnoremap s. <C-w>-
 nnoremap s= <C-w>=
 
 "翻屏
+nnoremap s <nop>
 nnoremap su <C-u>
 nnoremap sd <C-d>
 nnoremap sf <C-f>

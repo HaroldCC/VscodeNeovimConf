@@ -58,6 +58,7 @@ autocmd InsertLeave * :silent :!im-select 1033
 autocmd InsertEnter * :silent :!im-select 2052
 
 "翻屏
+nnoremap s <nop>
 nnoremap su <C-u>
 nnoremap sd <C-d>
 nnoremap sf <C-f>
